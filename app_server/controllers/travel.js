@@ -1,0 +1,57 @@
+const travel = (req, res) => {
+  res.render("travel", {
+    title: "Travlr Getaways | Travel",
+    pageTitle: "Travel",
+    categories: [
+      { name: "Beaches", count: 5 },
+      { name: "Cruises", count: 4 },
+      { name: "Mountains", count: 6 }
+    ],
+    trips: [
+      {
+        id: "B0101",
+        name: "Cancun",
+        length: "4 nights / 5 days",
+        start: "Feb 14, 2021",
+        resort: "Emerald Bay, 3-stars",
+        price: "$799.00"
+      },
+      {
+        id: "B0103",
+        name: "Barbados",
+        length: "5 nights / 6 days",
+        start: "Feb 28, 2021",
+        resort: "Castaway Cove, 4-stars",
+        price: "$1299.00"
+      },
+      {
+        id: "B0401",
+        name: "Panama City",
+        length: "4 nights / 5 days",
+        start: "Mar 21, 2021",
+        resort: "Sunseeker Surf, 4-stars",
+        price: "$1199.00"
+      },
+      {
+        id: "B0701",
+        name: "Tahiti",
+        length: "6 nights / 7 days",
+        start: "Mar 28, 2021",
+        resort: "Hedonist Heaven, 5-stars",
+        price: "$1799.00"
+      },
+      {
+        id: "B0901",
+        name: "French Riviera",
+        length: "5 nights / 6 days",
+        start: "Apr 11, 2021",
+        resort: "Chateau Royal, 5-stars",
+        price: "$2499.00"
+      }
+    ]
+  });
+};
+
+module.exports = {
+  travel
+};
